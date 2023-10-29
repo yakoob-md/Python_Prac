@@ -11,7 +11,12 @@ print()
 # print(df["a":"c"])
 print()
 # 3 index will not be considered 
-print(df[1:3])
+# even if the row index is numeric 
+# it will consider the positional indexing only 
+# df will slice for both labelled and positional index 
+# but labelled only when they are non numeric
+print(df['1':'3'])
 print()
 # only one row 
 print(df[1:2])
+print()

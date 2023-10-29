@@ -8,7 +8,7 @@ print(df.names)
 print()
 print(df[['names','sex']])
 print()
-print(df["a":"c"])
+# print(df["a":"c"])
 print()
 # 3 index will not be considered 
 print(df[1:3])

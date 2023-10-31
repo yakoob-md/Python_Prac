@@ -12,3 +12,8 @@ print(np.sort(d))
 print(np.median(d))
 # mode
 print(sts.mode(d))
+# variance 
+print(np.var(d))
+# SD
+print(math.sqrt(np.var(d)))
+

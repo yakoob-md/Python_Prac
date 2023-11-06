@@ -12,3 +12,11 @@ print(df2.value_counts().sum())
 df3=df[(df['lunch']=='standard')&(df['gender']=='female')]
 print(df3.value_counts().sum())
 print(df3.shape)
+# d
+y=df['reading score']
+m=df['gender']=='male'
+f=df['gender']=='female'
+plt.plot(m,y,label='male')
+plt.plot(f,y,label='female')
+plt.legend()
+plt.show()

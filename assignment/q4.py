@@ -1,4 +1,5 @@
 import pandas as pd
-d=pd.read_csv('IPL Matches 2008-2020.csv')
-df3=d[(d['venue']) and (d['toss_decision']=='bat')]
-print(df3['venue'].value_counts())
+df=pd.read_csv('IPL Matches 2008-2020.csv')
+df3=df[(df['toss_decision']=='bat')]
+print(df3['venue'].value_counts().max())
+print(df3.iloc[0:1,"venue"])
